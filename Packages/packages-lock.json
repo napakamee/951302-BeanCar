@@ -7,6 +7,13 @@
       "dependencies": {},
       "hash": "5a230e1e10dafc6bbc0e48663db742dc76682f2a"
     },
+    "com.mybox": {
+      "version": "https://github.com/Deadcows/MyBox.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "900922be56cf6d547df65650037da21ef3ba54d1"
+    },
     "com.unity.cinemachine": {
       "version": "2.3.4",
       "depth": 0,

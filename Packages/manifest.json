@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.mybox": "https://github.com/Deadcows/MyBox.git",
     "com.keattikorn.physicsingame": "https://gitlab.com/keattikorn_public/physics-in-game.git#HingeJointEP2Samples1.0",
     "com.unity.cinemachine": "2.3.4",
     "com.unity.collab-proxy": "1.2.16",
