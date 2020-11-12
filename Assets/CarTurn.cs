@@ -19,7 +19,8 @@ public class CarTurn : MonoBehaviour
     public KeyCode KeyFront { get => _keyFront; set => _keyFront = value; }
     public KeyCode KeyBack { get => _keyBack; set => _keyBack = value; }
     public float turnForce = 1000;
-    public float moveForce = 50;
+    public float moveForce = 80;
+    public float backForce = 50;
 
     ConstantForce _constantForceComponent;
     Transform _transform;
@@ -50,7 +51,7 @@ public class CarTurn : MonoBehaviour
         }
         else if(Input.GetKey(KeyBack)){
             _constantForceComponent.enabled = true;
-            _constantForceComponent.relativeForce = new Vector3(0,0, -moveForce);
+            _constantForceComponent.relativeForce = new Vector3(0,0, -backForce);
         }
         else
         {
