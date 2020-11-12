@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static int playerWin;
@@ -11,6 +12,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         playerWin = 0;
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -29,11 +31,16 @@ public class GameManager : MonoBehaviour
 
     public void Player1Win()
     {
+        Time.timeScale = 0;
         Player1WinUI.SetActive(true);
     }
     public void Player2Win()
     {
+        Time.timeScale = 0;
         Player2WinUI.SetActive(true);
     }
 
+    public void Restart(){
+         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
