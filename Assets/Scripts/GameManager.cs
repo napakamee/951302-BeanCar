@@ -8,9 +8,15 @@ public class GameManager : MonoBehaviour
     public static int playerWin;
     public GameObject Player1WinUI;
     public GameObject Player2WinUI;
+    public Text Player1WinTxt;
+    public Text Player2WinTxt;
+    public Text Player1Name;
+    public Text Player2Name;
     // Start is called before the first frame update
     void Start()
     {
+        Player1Name.text = NameManager.Instance.Player1Name;
+        Player2Name.text = NameManager.Instance.Player2Name;
         playerWin = 0;
         Time.timeScale = 1;
     }
@@ -32,15 +38,18 @@ public class GameManager : MonoBehaviour
     public void Player1Win()
     {
         Time.timeScale = 0;
+        Player1WinTxt.text = NameManager.Instance.Player1Name + " Win!";
         Player1WinUI.SetActive(true);
     }
     public void Player2Win()
     {
         Time.timeScale = 0;
+        Player2WinTxt.text = NameManager.Instance.Player2Name + " Win!";
         Player2WinUI.SetActive(true);
     }
 
-    public void Restart(){
-         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
