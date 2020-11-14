@@ -13,9 +13,12 @@ public class CarScript : MonoBehaviour
     [SerializeField] public GameObject _ball;
     float coolDown = 2;
     public int bulletNumber;
+    public AudioClip pew;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         bulletNumber = 0;
     }
 
@@ -44,12 +47,14 @@ public class CarScript : MonoBehaviour
     void BallSpawn()
     {
         int randPos;
+        audioSource.PlayOneShot(pew);
         randPos = Random.Range(0, bulletLauncherPosition.Length);
         GameObject ball = Instantiate(_ball, bulletLauncherPosition[randPos]) as GameObject;
         //ball.transform.localScale = new Vector3(0.2f,0.2f,0.2f);
         Rigidbody rb = ball.GetComponent<Rigidbody>();
         rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
         rb.AddForce(bulletLauncherPosition[randPos].forward * bulletForceMagnitude, ForceMode.Impulse);
+
         Destroy(ball, 2);
     }
 }

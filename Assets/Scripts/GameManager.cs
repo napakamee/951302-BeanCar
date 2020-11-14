@@ -12,9 +12,12 @@ public class GameManager : MonoBehaviour
     public Text Player2WinTxt;
     public Text Player1Name;
     public Text Player2Name;
+     AudioSource audioSource;
+    public AudioClip uiSound;
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         Player1Name.text = NameManager.Instance.Player1Name;
         Player2Name.text = NameManager.Instance.Player2Name;
         playerWin = 0;
@@ -51,5 +54,8 @@ public class GameManager : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void PlayUISound(){
+        audioSource.PlayOneShot(uiSound);
     }
 }
