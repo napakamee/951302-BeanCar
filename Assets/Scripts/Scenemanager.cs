@@ -9,6 +9,7 @@ public class Scenemanager : MonoBehaviour
     public AudioClip clickSound;
     void Start()
     {
+        Time.timeScale = 1;
         audioSource = GetComponent<AudioSource>();
     }
     public void StartGame()

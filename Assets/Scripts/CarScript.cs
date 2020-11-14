@@ -50,11 +50,9 @@ public class CarScript : MonoBehaviour
         audioSource.PlayOneShot(pew);
         randPos = Random.Range(0, bulletLauncherPosition.Length);
         GameObject ball = Instantiate(_ball, bulletLauncherPosition[randPos]) as GameObject;
-        //ball.transform.localScale = new Vector3(0.2f,0.2f,0.2f);
         Rigidbody rb = ball.GetComponent<Rigidbody>();
         rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
         rb.AddForce(bulletLauncherPosition[randPos].forward * bulletForceMagnitude, ForceMode.Impulse);
-
         Destroy(ball, 2);
     }
 }
