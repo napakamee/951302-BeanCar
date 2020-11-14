@@ -1131,6 +1131,7 @@ MonoBehaviour:
   bulletLauncherPosition:
   - {fileID: 3744667210899996003}
   _keyShoot: 32
+  bulletAmount: {fileID: 0}
   bulletForceMagnitude: 300
   _ball: {fileID: 725988822830130301, guid: 4b7d1a453288f264ab259ae15a16cbe4, type: 3}
   bulletNumber: 0
@@ -2079,6 +2080,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.005777213
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 3d7ecbbe89385d144827a3e08f8fb028,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b18f33753c1b90e4894dc53ca13e8f5a, type: 2}
     - target: {fileID: 919132149155446097, guid: 3d7ecbbe89385d144827a3e08f8fb028,
         type: 3}
       propertyPath: m_Name
