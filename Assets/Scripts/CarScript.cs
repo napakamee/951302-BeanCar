@@ -14,6 +14,7 @@ public class CarScript : MonoBehaviour
     float coolDown = 2;
     public int bulletNumber;
     public AudioClip pew;
+    public AudioClip quack;
     AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,7 @@ public class CarScript : MonoBehaviour
         if (other.CompareTag("Bullet"))
         {
             bulletNumber++;
+            audioSource.PlayOneShot(quack);
             Destroy(other.gameObject);
         }
     }

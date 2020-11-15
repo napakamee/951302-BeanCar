@@ -1233,6 +1233,7 @@ MonoBehaviour:
   _ball: {fileID: 725988822830130301, guid: 4b7d1a453288f264ab259ae15a16cbe4, type: 3}
   bulletNumber: 0
   pew: {fileID: 8300000, guid: ad2454e5ff230ee4d9afba61ad470be5, type: 3}
+  quack: {fileID: 8300000, guid: a95d154b30ddb1245b1316641822c357, type: 3}
 --- !u!114 &5558717230918830228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1323,7 +1324,7 @@ ConstantForce:
   m_RelativeForce: {x: 0, y: 0, z: 0}
   m_Torque: {x: 0, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 500}
---- !u!114 &4967737774176019986
+--- !u!114 &4095565104105915141
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1332,7 +1333,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5202109462768261981}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2db4b473f93a4eb684cc509ed75834e, type: 3}
+  m_Script: {fileID: 11500000, guid: 8106df90ce71fc9459c16e675cb491b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _maxAngularSpeedLimit: Infinity
@@ -1413,7 +1414,7 @@ ConstantForce:
   m_RelativeForce: {x: 0, y: 0, z: 0}
   m_Torque: {x: 0, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 500}
---- !u!114 &4967737773584505360
+--- !u!114 &3583029941699499940
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1422,7 +1423,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5202109463259595867}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2db4b473f93a4eb684cc509ed75834e, type: 3}
+  m_Script: {fileID: 11500000, guid: 8106df90ce71fc9459c16e675cb491b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _maxAngularSpeedLimit: Infinity
@@ -1629,7 +1630,7 @@ ConstantForce:
   m_RelativeForce: {x: 0, y: 0, z: 0}
   m_Torque: {x: 20, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}
---- !u!114 &4967737772500934409
+--- !u!114 &1676524727820246144
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1638,7 +1639,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5202109464094370365}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2db4b473f93a4eb684cc509ed75834e, type: 3}
+  m_Script: {fileID: 11500000, guid: 8106df90ce71fc9459c16e675cb491b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _maxAngularSpeedLimit: Infinity
@@ -1719,7 +1720,7 @@ ConstantForce:
   m_RelativeForce: {x: 0, y: 0, z: 0}
   m_Torque: {x: 20, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}
---- !u!114 &4967737773246872385
+--- !u!114 &2043201957472764823
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1728,7 +1729,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5202109464334431774}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2db4b473f93a4eb684cc509ed75834e, type: 3}
+  m_Script: {fileID: 11500000, guid: 8106df90ce71fc9459c16e675cb491b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _maxAngularSpeedLimit: Infinity
